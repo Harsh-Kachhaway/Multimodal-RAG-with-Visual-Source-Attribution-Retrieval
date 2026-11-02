@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCERT Multimodal Knowledge Explorer</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout-container">
+        <header class="app-header">
+            <div class="brand-group">
+                <div class="brand-badge">NCERT Digital Archive</div>
+                <h1 class="brand-title">Democratic Politics: Power-Sharing Explorer</h1>
+                <p class="brand-subtitle">Multimodal Concept Synthesizer & Visual Diagram Archive · Grade X Chapter 1</p>
+            </div>
+            <div class="system-status-indicator">
+                <span class="status-dot" id="systemStatusDot"></span>
+                <span class="status-label" id="systemStatusLabel">Checking System</span>
+            </div>
+        </header>
+
+        <section class="explorer-bar">
+            <div class="search-input-wrapper">
+                <input 
+                    type="text" 
+                    id="userQuestionInput" 
+                    class="search-input" 
+                    placeholder="Ask any concept from Chapter 1 (e.g., What is the ethnic composition of Belgium?)"
+                    value="What is the ethnic composition of Belgium?"
+                />
+                <button id="searchButton" class="action-button">
+                    <span>Synthesize & Inspect</span>
+                </button>
+            </div>
+
+            <div class="preset-chips-container">
+                <span class="chip-label">Quick Concept Inquiries:</span>
+                <button class="topic-chip" data-question="What is the ethnic composition of Belgium?">Belgium Ethnic Divide</button>
+                <button class="topic-chip" data-question="What majoritarian measures were taken in Sri Lanka?">Sri Lanka Majoritarianism</button>
+                <button class="topic-chip" data-question="Explain the accommodation model in Belgium.">Belgian Accommodation</button>
+                <button class="topic-chip" data-question="Why is power sharing desirable?">Desirability of Power Sharing</button>
+                <button class="topic-chip" data-question="What are the different forms of power sharing?">Forms of Power Sharing</button>
+            </div>
+        </section>
+
+        <main class="study-workspace">
+            <section class="synthesis-panel">
+                <div class="panel-header">
+                    <div class="panel-title-group">
+                        <span class="panel-tag">Structured Report</span>
+                        <h2 class="panel-title">Knowledge Synthesis</h2>
+                    </div>
+                    <div id="relevanceBadge" class="score-pill">Awaiting Query</div>
+                </div>
+
+                <div id="answerContent" class="synthesis-body">
+                    Click Explore or select an inquiry chip to query the textbook vectors.
+                </div>
+
+                <div class="sources-section">
+                    <h3 class="sources-title">Retrieved Textbook Passages</h3>
+                    <div id="sourcesContainer" class="sources-list">
+                    </div>
+                </div>
+            </section>
+
+            <aside class="visual-panel">
+                <div class="panel-header">
+                    <div class="panel-title-group">
+                        <span class="panel-tag">Visual Archives</span>
+                        <h2 class="panel-title">Textbook Diagrams & Maps</h2>
+                    </div>
+                    <div id="diagramCountBadge" class="score-pill">0 Visuals</div>
+                </div>
+
+                <div id="diagramDisplayArea" class="diagram-gallery">
+                    <div class="empty-diagram-state">
+                        <div class="empty-icon">🗺️</div>
+                        <p>Diagrams, historical maps, and political cartoons linked to retrieved concepts appear here.</p>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <div id="imageLightboxModal" class="modal-overlay hidden">
+        <div class="modal-dialog">
+            <button id="closeModalButton" class="modal-close">&times;</button>
+            <img id="modalFullImage" class="modal-image" src="" alt="Textbook diagram">
+            <div id="modalCaption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
+
