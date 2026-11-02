@@ -1,5 +1,12 @@
-# NCERT Multimodal Knowledge Explorer & Visual RAG
+# Multimodal-RAG-with-Visual-Source-Attribution-Retrieval
 
+<p align="center">
+  <!-- Badges / Tags -->
+  <img src="https://img.shields.io/badge/100%25-Local-brightgreen?style=for-the-badge" alt="100% Local">
+  <img src="https://img.shields.io/badge/Docker-Supported-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Privacy-First-blueviolet?style=for-the-badge" alt="Privacy First">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+</p>
 A production-grade, 100% local, multimodal Retrieval-Augmented Generation (RAG) system and interactive research station for NCERT textbooks (text and diagrams).
 
 Built with **FastAPI**, **Qdrant**, **LlamaIndex**, **Ollama**, **Streamlit**, and a **custom modern HTML/CSS/JS Research Station**.
