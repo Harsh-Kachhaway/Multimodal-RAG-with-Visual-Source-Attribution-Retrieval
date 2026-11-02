@@ -13,6 +13,17 @@ Built with **FastAPI**, **Qdrant**, **LlamaIndex**, **Ollama**, **Streamlit**, a
 
 ---
 
+##  Application Screenshots
+
+<p align="center">
+  <img src="https://github.com/Harsh-Kachhaway/Multimodal-RAG-with-Visual-Source-Attribution-Retrieval/blob/master/Screenshot%202026-11-03%20001938.png?raw=true" width="48%" alt="Streamlit UI">
+  <img src="https://github.com/Harsh-Kachhaway/Multimodal-RAG-with-Visual-Source-Attribution-Retrieval/blob/master/Screenshot%202026-11-03%20001950.png?raw=true" width="48%" alt="Diagram Lightbox">
+</p>
+<p align="center">
+  <img src="https://github.com/Harsh-Kachhaway/Multimodal-RAG-with-Visual-Source-Attribution-Retrieval/blob/master/Screenshot%202026-11-03%20004420.png?raw=true" width="48%" alt="Web Research Station">
+  <img src="https://github.com/Harsh-Kachhaway/Multimodal-RAG-with-Visual-Source-Attribution-Retrieval/blob/master/Screenshot%202026-11-03%20010904.png?raw=true" width="48%" alt="Hybrid Search Results">
+</p>
+
 ## Why This Project Exists
 
 Most textbook RAG tutorials build basic text-only chat bubbles using proprietary cloud APIs (like OpenAI or Anthropic). This project solves three real-world industrial challenges:
